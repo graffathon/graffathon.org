@@ -1,3 +1,23 @@
 baseURL = 'https://graffathon.org/'
 languageCode = 'en-us'
 title = 'Graffathon 2024'
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "News"
+    pageRef = "news"
+    weight = 2
+  [[menu.main]]
+    name = "Contact"
+    pageRef = "contact"
+    weight = 3
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  dateFormat = "Jan 2, 2006"

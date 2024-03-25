@@ -1,0 +1,15 @@
+<head>
+  <meta charset="utf-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+  {{ $css := "style.css" | relURL }} {{ $shader := "shader.js" | relURL }} {{
+  $favicon := "favicon.png" | relURL }}
+  <link rel="stylesheet" href="{{ $css }}" />
+  <script src="{{ $shader }}"></script>
+  <link rel="icon" type="image/x-icon" href="{{ $favicon }}" />
+  {{ $title := print .Title " - " .Site.Title }} {{ if .IsHome }}{{ $title =
+  .Site.Title }}{{ end }}
+  <title>{{ $title }}</title>
+</head>
